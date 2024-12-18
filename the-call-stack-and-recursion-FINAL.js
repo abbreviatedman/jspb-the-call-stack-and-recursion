@@ -1,8 +1,9 @@
+debugger;
 const treeCarver = (name1, name2) => {
     const initials1 = initialsMaker(name1);
     const initials2 = initialsMaker(name2);
 
-    return initials1 + ' hearts' + initials2;
+    return initials1 + ' hearts ' + initials2;
 }
 
 const initialsMaker = (name) => {
@@ -27,7 +28,9 @@ function student2(names) {
 }
 
 function student3(names) {
-    instructor(names + ', ' + 'Charles');
+    const names3 = names.slice();
+    names3.push('Charles');
+    instructor(names3);
 }
 
 function instructor(names) {
@@ -76,5 +79,4 @@ const getFactorial = (num) => {
     return num * answerForOneLess;
 }
 
-debugger;
 getFactorial(5);
