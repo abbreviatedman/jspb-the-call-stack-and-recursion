@@ -1,4 +1,13 @@
 debugger;
+
+const convertFromCelsius = (degreesCelsius) => {
+    return degreesCelsius * 9 / 5 + 32;
+}
+
+convertFromCelsius(0);
+convertFromCelsius(20);
+convertFromCelsius(30);
+
 const treeCarver = (name1, name2) => {
     const initials1 = initialsMaker(name1);
     const initials2 = initialsMaker(name2);

@@ -1,5 +1,21 @@
 ### The Call Stack
 
+#### Call Stack Basics
+
+Let's create a function, run it with the debugger, and see the call stack in action.
+
+```js
+debugger;
+
+const convertFromCelsius = (degreesCelsius) => {
+    return degreesCelsius * 9 / 5 + 32;
+}
+
+convertFromCelsius(0);
+convertFromCelsius(20);
+convertFromCelsius(30);
+```
+
 #### Helper Functions
 
 Have one student be the function that, given "Colin Jaffe" and "Sarah Jaffe" outputs "C.J. hearts S.J."
